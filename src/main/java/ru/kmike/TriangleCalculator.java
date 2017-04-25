@@ -4,10 +4,7 @@ import java.math.BigDecimal;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
-//import ru.kmike.Arguments;
-//import ru.kmike.Triangle;
-//import ru.kmike.Triangle.TriangleType;
-//import ru.kmike.TriangleSide;
+
 
 
 public class TriangleCalculator {

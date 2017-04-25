@@ -19,18 +19,5 @@ class Arguments{
         }catch(Exception e){
             return Optional.empty();
         }
-    }
-    
-    /** require exactly N numeric arguments to be present */
-    /*public static Optional<List<BigDecimal>> requireNumericArgs(String[] args, int numberRequired){
-        // Parse all arguments to numbers. Preserve list length just in case we want to display non-numeric arguments
-        List<Optional<BigDecimal>> parsedArgs=Arguments.parseArgs(args)
-        // Collect only numeric arguments, converting from optional
-        List<BigDecimal> numericArgs=parsedArgs.findAll{it.isPresent()}.collect{it.get()}
-        if(numericArgs.size()==numberRequired){
-            Optional.of(numericArgs)
-        }else{
-            Optional.empty()
-        }
-    }*/
+    }    
 }
