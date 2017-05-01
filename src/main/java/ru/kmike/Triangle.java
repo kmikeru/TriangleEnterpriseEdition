@@ -57,7 +57,7 @@ public class Triangle {
     }
     
     /** Create Triangle from TriangleSideSet */
-    public static Optional<Triangle> createTriangle(TriangleSideSet sideSet){
+    static Optional<Triangle> createTriangle(TriangleSideSet sideSet){
         final TriangleSide[] sideArray=sideSet.toArray();
         return createTriangle(sideArray[0],sideArray[1],sideArray[2]);
     }

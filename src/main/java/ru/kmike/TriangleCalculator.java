@@ -34,8 +34,9 @@ public class TriangleCalculator {
         if(! sideSet.isPresent()){
             return "Error: set of triangle sides could not be created";
         }
-                
-        Optional<Triangle> triangle=Triangle.createTriangle(sideSet.get()); // try to create a triangle from the set of sides
+
+        TriangleFactory tFactory=new TriangleFactory();
+        Optional<Triangle> triangle=tFactory.getTriangle(sideSet.get()); // try to create a triangle from the set of sides
         if(! triangle.isPresent()){
             return "Error: triangle with specified sides could not exist";
         }
